@@ -1,3 +1,47 @@
 body {
-  background: blanchedalmond;
+  background: rgb(248, 210, 173);
 }
+ body {
+    margin :0;
+    font-family: sans-sherif;
+    text-align: center;
+    background-color: #2f3e46;
+    color: #BFF4CB;
+    }
+    *{
+       
+        border: 1px solid teal;
+    }
+    .container {
+        display: flex;
+        min-height: 100vh;
+        flex-direction:column;
+        justify-content: space-between;
+    }                  
+    .b{
+        min-height: 60vh;
+        flex-grow: 4;
+    }
+    .c{color: #2f3e46;
+        background-color: #63a940;
+        flex-grow: 2;
+    }
+    .a{
+        background-color: rgb(108, 128, 145);
+        flex-grow: 1;
+    }
+    @media(min-width: 600px){
+        .container{
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        .b{
+            max-width: 100%;
+        }
+        .a{
+            width: 100%;
+        }
+
+    }
+         
+    
